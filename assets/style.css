@@ -1,4 +1,19 @@
 body{
     background-color: black;
     color: aliceblue;
+    font-family: Verdana;
+}
+
+.main{
+    font-size: 52;
+}
+
+a:hover {
+    background-color: #ffffff;
+    color: rgb(12, 197, 6);
+  }
+
+.travel{
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
 }
