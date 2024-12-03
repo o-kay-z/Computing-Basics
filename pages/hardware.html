@@ -80,10 +80,164 @@
     <section>
         <article>
             <h2>Motherboards</h2>
-                <p> text </p>
+                <p>
+                    The mother board consists of power and data connectors, capacitors, heat sinks, and fans. 
+                    It typically is made of fiberglass and copper. 
+                    <br><br>The 12 key components are:
+                </p>
+
+                <ul>
+                    <li>BIOS</li>
+                    <li>CPU</li>
+                    <li>USB</li>
+                    <li>RAM</li>
+                    <li>chipsets</li>
+                    <li>storage devices</li>
+                    <li>Adapter cards / expansion slots</li>
+                    <li>CMOS battery</li>
+                    <li>power connectors</li>
+                    <li>front panel connectors</li>
+                    <li>mouse and keyboard connectors</li>
+                    <li>cooling fans</li>
+                </ul>
+
+                <p>
+                    Form Factor - refers to the size, shape, and physical specifications of hardware components. It is crucial for maintaining connection compatibility within a computer system.
+                    <br><br>
+                    Central Processing Unit (CPU) - the primary component of a computer, often referred to as the "brain" of the machine. It processes and executes instructions from software, controlling the flow of data and enabling the computer to perform tasks. The CPU Slots/Socket connects a it to the motherboard using pins.
+                    <br><br>
+                    Random Access Memory (RAM) - stores and quickly accesses data making it enhance  computer performance. The Memory Slots ( aka RAM/DIMM slots) holds and connects the motherboard and  RAM modules.
+                    <br><br>
+                    Basic Input/Output System (BIOS) -  loads the operating system and is an essential firmware that bridges hardware and software. It starts and tests hardware components when a computer is turned on. 
+                    <br><br>
+                    Peripheral Component Interconnect (PCI) - connects a device to allow hardware components like network cards, sound cards, and modems to be attached to a computer.  Peripheral Component Interconnect Expresss (PCIe) provides better performance and bandwidth for components that are connected.
+                    <br><br>
+                    Serial Advanced Technology Attachment (SATA) - a technology used to connect storage devices (hard drives & SSDs) to a computer's motherboard. Data is transferred faster through transferring data one bit at a time over a single line.
+                </p>
+
                     <h2>Comparisons Between Different Types</h2>
                         <table>
-                            
+                            <tr>
+                                <th>Form Factor</th>
+                                <th>Build</th>
+                                <th>CPU Slots</th>
+                                <th>Memory Slots</th>
+                                <th>Chipsets</th>
+                                <th>BIOS</th>
+                                <th>PCI Slots</th>
+                                <th>SATA</th>
+                                <th>Builtin Features</th>
+                            </tr>
+                            <tr>
+                                <th>AT Motherboard</th>
+                                <td>12 x 13.8 in (305 x 350 mm)</td>
+                                <td>1 slot</td>
+                                <td>2-4 DIMM or SIMM slots (supports up to 64MB) </td>
+                                <td>Intel </td>
+                                <td>Legacy BIOS</td>
+                                <td>ISA (Industry Standard Architecture) slots</td>
+                                <td>Very few or none</td>
+                                <td>IDE/PATA support,  Very limited or no integrated networking and audio</td>
+                            </tr>
+                            <tr>
+                                <th>ATX Motherboard</th>
+                                <td>12 × 9.6 in (305 × 244 mm)</td>
+                                <td>1 slot</td>
+                                <td>Typically 4 DIMM slots (Supports up to 128GB)</td>
+                                <td>Intel, AMD</td>
+                                <td>UEFI BIOS </td>
+                                <td>1-3  x16 slots (GPUs), 1-3  x1 slots (cards)</td>
+                                <td>6-12 Ports</td>
+                                <td>RAID support, Ethernet, Integrated sound</td>
+                            </tr>
+                            <tr>
+                                <th>BTX Motherboard</th>
+                                <td>BTX Motherboard</td>
+                                <td>1 slot</td>
+                                <td>2-4 DIMM slots (Supports up to 16GB)</td>
+                                <td>Intel</td>
+                                <td>Legacy BIOS, limited functionality</td>
+                                <td>x16 (GPU), x1 (others)</td>
+                                <td>2-6 SATA II ports</td>
+                                <td>Integrated Ethernet, Basic onboard sound support</td>
+                            </tr>
+                            <tr>
+                                <th>Extended-ATX Motherboard</th>
+                                <td>12 × 13 in (305 × 330 mm)</td>
+                                <td>Multi-Processor Support</td>
+                                <td>8 DIMM (Supports up to 256GB)</td>
+                                <td>Intel, AMD</td>
+                                <td>UEFI BIOS with advanced features.</td>
+                                <td>3-5  x16 slots (GPUs, RAID cards, or networking), Multi-GPU support</td>
+                                <td>6-10 SATA III ports</td>
+                                <td>RAID support, Dual Ethernet ports, High-end onboard audio codecs, Extended fan headers for</td>
+                            </tr>
+                            <tr>
+                                <th>LPX Motherboard</th>
+                                <td>13 x 9 in (330 x 229 mm)</td>
+                                <td>1  slot</td>
+                                <td>2-4 SIMM or DIMM slots (Limited, up to 128MB)</td>
+                                <td>Integrated, platform specific</td>
+                                <td>Legacy BIOS</td>
+                                <td>User card to provide 2-3 PCI </td>
+                                <td>N/A</td>
+                                <td>"Basic sound chips or required sound cards, Serial and parallel ports.</td>
+                            </tr>
+                            <tr>
+                                <th>Micro-ATX Motherboard</th>
+                                <td>9.6 × 9.6 in (244 × 244 mm)</td>
+                                <td>1  slot</td>
+                                <td>2-4 DIMM slots (Supports up to 64GB or 128GB), Dual-channel memory configuration</td>
+                                <td>Intel, AMD</td>
+                                <td>UEFI BIOS</td>
+                                <td>1 x16 slot (GPU), 1-2 x1 slots (others)</td>
+                                <td>4-6 SATA III ports</td>
+                                <td>1-2 M.2 slots for NVMe SSDs, RAID support, Integrated Ethernet, Onboard audio codec, USB 3.2 Gen 2</td>
+                            </tr>
+                            <tr>
+                                <th>Mini ITX Motherboard</th>
+                                <td>6.7 x 6.7 in (170 × 170 mm).</td>
+                                <td>1  slot</td>
+                                <td>2 DIMM slots(Supports up to 64GB or 128GB), Dual-channel memory configuration</td>
+                                <td>Intel & AMD, fewer features  compared to larger boards</td>
+                                <td>UEFI BIOS</td>
+                                <td>1 x16 slot (GPU/expansion card)</td>
+                                <td>2-4 SATA III ports</td>
+                                <td>1-2 M.2 slots for NVMe SSDs, RAID support, Integrated Ethernet, Integrated audio codec</td>
+                            </tr>
+                            <tr>
+                                <th>Mini-ATX Motherboard</th>
+                                <td>apprx. 11.2 x 8.2 in (284 x 208 mm)</td>
+                                <td>1  slot</td>
+                                <td>2-4 DIMM slots (Supports up to 64GB or 128GB)</td>
+                                <td>Intel, AMD</td>
+                                <td>UEFI BIOS</td>
+                                <td>1 x16 slot  (GPU/Expansion card), 1-2 x1 slots (others)</td>
+                                <td>4-6 SATA III ports</td>
+                                <td>1-2 M.2 slots for NVMe SSDs, RAID support, Integrated Ethernet, Integrated audio codec</td>
+                            </tr>
+                            <tr>
+                                <th>Pico BTX Motherboard</th>
+                                <td>8 x 10.5 in (203 x 267 mm).</td>
+                                <td>1  slot</td>
+                                <td>2 DIMM slots (Limited to about 8GB or 16GB)</td>
+                                <td>Intel</td>
+                                <td>Legacy BIOS</td>
+                                <td>1 x16 slot ( low-profile GPU or add-on card)</td>
+                                <td>2-4 SATA II ports</td>
+                                <td>linear airflow path, Integrated Ethernet, Basic onboard audio solutions.</td>
+                            </tr>
+                            <tr>
+                                <th>Standard-ATX Motherboard</th>
+                                <td>12 x 9.6 in (305 x 244 mm)</td>
+                                <td>1  slot</td>
+                                <td>4 DIMM slots (Supports up to 128GB), Dual-channel or quad-channel memory configurations.</td>
+                                <td>Intel, AMD</td>
+                                <td>UEFI BIOS</td>
+                                <td>1 -2  x16 slots (GPU), 1-2 x1 slots  (others)</td>
+                                <td>4-8 SATA III ports</td>
+                                <td>2-3 M.2 slots for high-speed NVMe SSDs,  RAID support, Integrated Ethernet</td>
+                            </tr>
                         </table>
         </article>
     </section>
