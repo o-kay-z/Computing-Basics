@@ -1,3 +1,4 @@
+/* css for all pages */
 body{
     background-color: white;
     color: black;
@@ -60,7 +61,7 @@ section.second img{
 section{
     text-align: left;
     padding: 80px;
-    margin: 1px;
+    margin-top: 1px;
 }
 
 p{
@@ -74,16 +75,59 @@ img{
     margin-right: auto;
 }
 
+.history{
+    width: 70%;
+    height: auto;
+}
+
 h3{
     text-align: center;
 }
 
+/* css for ALL tables */
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+tbody {
+    background-color: #f9f9f9;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #727272;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #c9c9c9;
+}
+
+/* css for carousel */
 section.carousel-container{
  position: relative;
  margin-top: 0px;
  padding: 0px;
 }
+
+.carousel-container h2{
+    padding-left: 80px;
+}
+
 
 .carousel{
     display: none;
@@ -98,7 +142,7 @@ section.carousel-container{
 
 .carousel img{
     display: block;
-    width: 70%;
+    width: 50%;
     background-size: contain;
 }
 
@@ -107,9 +151,10 @@ section.carousel-container{
 }
 
 .carousel p.desc{
+    margin: auto;
     color: #000000;
     position: static;
-    width: 100%;
+    width: 50%;
     text-align: justify;
   }
   
@@ -133,6 +178,8 @@ a.prev, .next{
     right: 100px;
     border-radius: 3px 0 0 3px;
 }
+
+/* css for fundamentals.html */
 
 #icons{
     width: 200px ;
@@ -158,7 +205,14 @@ a.prev, .next{
     gap: 20px;
 }
 
-.numbsys{
+.numbsys-h{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 80px;
+}
+
+
+.numbsys-c{
     display: flex;
     gap: 20px;
     padding: 20px;
@@ -167,22 +221,122 @@ a.prev, .next{
     
 }
 
-.numbsys article{
+.numbsys-c article{
     flex: 1;
     min-width: 200px;
     max-width: 250px;
     padding: 15px;
     text-align: center;
     background-color: #dadada;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.numbsys h3{
-}
 
-.numbsys p{
+.numbsys-c p{
     text-align: justify; 
-    font-size: 14px;
+    font-size: 16px;
 }
+
+
+.infosys {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.infosys-h {
+    width: 45%;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 20px;
+    margin: auto;
+}
+
+.infosys-h h2 {
+    font-size: 41px;
+    margin-bottom: 15px;
+}
+
+.infosys-h p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.infosys-c {
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infosys-c article {
+    background-color: #e3e3e3;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.infosys-c p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+
+
+/* css for software.html */
+
+.software{
+    display: flex;
+    gap: 20px;
+}
+
+.software article{
+    background-color: #c9c9c9;
+    flex: 1;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.software article:hover{
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #363636 ;
+    background-color: #e4e4e4 ;
+}
+
+.software h2{
+    text-align: center;
+}
+
+.applic {
+    background-color: #c9c9c9;
+    margin: 80px;
+}
+
+.applic details{
+    padding: 20px;
+}
+.applic summary{
+    font-size: 34px;
+}
+
+.syst {
+    background-color: #c9c9c9;
+    margin: 80px;
+    padding: 20px;
+}
+
+.syst table td{
+text-align: justify;
+}
+
 
 #application-details{
     display: none;
@@ -204,45 +358,56 @@ a.prev, .next{
     transform: rotate(270deg);
 }
 
-/* .numbsys {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-}
-
-.numbsys article {
-    flex: 1;
-    min-width: 200px;
-    max-width: 250px;
-    background-color: #f3f3f3;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+.implement-community-whole section{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 
-.numbsys h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
+.implement-community-whole h2 {
+    background-color: #e3e3e3;
+    padding: 20px;
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
-.numbsys p {
+.implement-community {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.implement-community article {
+    width: 25%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.implement-community article h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.implement-community article h3::before {
+    content: '●';
+    color: #555;
+    font-size: 24px;
+}
+
+.implement-community article p {
     font-size: 14px;
-    text-align: justify;
-} */
-
-
-
-
-
-
-
-
-
-
+    color: #555;
+    line-height: 1.6;
+}
 
 
 
@@ -251,7 +416,8 @@ a:hover {
     color: rgb(12, 197, 6);
   }
 
-a.travel{
-        background-color: #ffffff;
-        color: rgb(0, 0, 0);
+a.travel{ 
+    display: none; /* no time to css */
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
