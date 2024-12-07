@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computing Basics</title>
     <link rel="stylesheet" href="../assets/style.css">
+    <script src="../javascript/script.js"></script>
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <h1>Computing Basics</h1>
         <nav>
 
-            <a href="/index.html">Home</a>
+            <a href="../index.html">Home</a>
             <a href="fundamentals.html">Fundamentals</a>
             <a href="hardware.html">Hardware</a>
             <a href="software.html">Software</a>
@@ -28,22 +29,30 @@
     </section>
 
     <section>
-        <h2>Data</h2>
-        <img src="../assets/icons/data.png" id="icons" class="data">
-            <p class="data"> 
-                Data is the factual information gained from statistics that is used to assess a decision about a specific
-                action. Data can be numbers, characters, images or others. We use these data as a basis for rationalization,
-                discussion, or calculation. It can be either Qualitative or Quantitative. The former being in verbal or
-                narrative format whereas Quantitative is numerical. Examples for each are as follows: 
-            </p>
-
-        <h2>Information</h2>
-        <img src="../assets/icons/info.png" id="icons" class="info">
-            <p> 
-                Information is when the data is then used to analyze and interpret given the context. It is structured and
-                has been processed in order for the researcher or analyst to acquire ideas that is helpful to their decision
-                making. 
-            </p>
+        <div class="datainfo">
+            <img src="../assets/icons/data.png" id="icons" class="data">
+            <div> 
+            <h2>Data</h2>
+                <p class="data"> 
+                    Data is the factual information gained from statistics that is used to assess a decision about a specific
+                    action. Data can be numbers, characters, images or others. We use these data as a basis for rationalization,
+                    discussion, or calculation. It can be either Qualitative or Quantitative. The former being in verbal or
+                    narrative format whereas Quantitative is numerical. Examples for each are as follows: 
+                </p>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="datainfo">
+            <div>
+            <h2>Information</h2>
+                <p> 
+                    Information is when the data is then used to analyze and interpret given the context. It is structured and
+                    has been processed in order for the researcher or analyst to acquire ideas that is helpful to their decision
+                    making. 
+                </p>
+            </div>
+            <img src="../assets/icons/info.png" id="icons" class="info">
+        </div>
     </section>
 
     <section>
@@ -53,9 +62,9 @@
                 numbers (0s and 1s) to handle the things we save, input, or retrieve from the computer’s memory. Every thing
                 such as audio, graphics, video, texts, and numbers follow a specific number system 
             </p>
-
+        <div class="numbsys">
         <article>
-            <h3>Decimal (Base 10)</h2>
+            <h3>Decimal</h2>
                 <p> 
                     It is from the Latin word “decem” meaning 10, containing 10 digits ranging from 0 to 9. 
                     It is easy to use and understand thus, majority of the population uses this number system. 
@@ -64,7 +73,7 @@
         </article>
 
         <article>
-            <h3>Binary (Base 2)</h2>
+            <h3>Binary</h2>
                 <p> 
                     From the Latin word “binarius” meaning containing or consisting of two things. It contains only 2 digits consisting of 1 (on) and 0 (off), typically used by digital computers
                     The 2 digits corresponds to state of computer’s electrical circuits. All types of data can be represented and computed through binary, such use Boolean Logic (AND, OR, NOT) for decision making.
@@ -72,7 +81,7 @@
         </article>
 
         <article>
-            <h3>Octal (Base 8)</h2>
+            <h3>Octal</h2>
                 <p> 
                     From the Latin word “octo” meaning 8, containing 8 digits ranging 0 to 7.
                     One octal digit is equivalent to three binary digits. This numer system is used by computer programmers.
@@ -83,7 +92,7 @@
         </article>
 
         <article>
-            <h3>Hexadecimal (Base 16)</h2>
+            <h3>Hexadecimal</h2>
                 <p> 
                     From the Latin word “hexa” meaning six and “decem”, contains 16 digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, and F.
                     Note that the values of 10 to 15 are represented as letters instead.
@@ -92,6 +101,7 @@
                     debugging.
                 </p>
         </article>
+        </div>
     </section>
 
     <section>
@@ -141,8 +151,14 @@
         </article>
     </section>
 
-    <a href="/index.html" class="travel">Main Page</a>
+    <div class="to-top" onclick="toTop()">
+        &#10095;
+    </div>
+
+    <a href="../index.html" class="travel">Main Page</a>
     <a href="hardware.html" class="travel">Hardware</a>
+
+   
 </body>
 
 </html>

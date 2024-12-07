@@ -23,3 +23,19 @@
     }
     slides[slideIndex-1].style.display = "block";
     }
+
+    function toTop(){
+        window.scrollTo({
+            top:0,
+            behavior: 'smooth'
+        })
+    }
+
+    // window.addEventListener('scroll', function(){
+    //     if(window.scroll>200){
+    //         document.getElementsByClassName("to-top").style.display = "block"
+    //     }
+    //     else{
+            
+    //     }
+    // })

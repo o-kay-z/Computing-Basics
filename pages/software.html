@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computing Basics</title>
     <link rel="stylesheet" href="../assets/style.css">
+    <script src="../javascript/script.js"></script>
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <h1>Computing Basics</h1>
         <nav>
 
-            <a href="/index.html">Home</a>
+            <a href="../index.html">Home</a>
             <a href="fundamentals.html">Fundamentals</a>
             <a href="hardware.html">Hardware</a>
             <a href="software.html">Software</a>
@@ -34,14 +35,27 @@
     </section>
 
     <section>
-        <article>
+        <article id="application-click">
             <h2>Application Software</h2>
                 <p> 
                     Used to solve a particular problem or to perform a particular task, may either be custom-designed or packaged. Real word tasks such as
                     keeping track of inventory, designing a car engine, drafting minutes for meeting, and playing games are possible for users because of it.   
                 </p>
         </article>
-        <details>
+
+        <article id="system-click">
+            <h2>System Software</h2>
+                <p> 
+                    Manages and supports the operation of a computer system, often interacting directly with hardware.
+                    It includes operating systems, hardware drivers, and programming languages, which are typically not of
+                    concern to regular end-users. 
+                </p>
+        </article>
+    </section>
+
+    <div id="application-details">
+
+        <details id="general-details">
             <summary> General Purpose Software </summary>
                 <table>
                     <tr>
@@ -63,7 +77,7 @@
                 </table>
         </details>
 
-        <details>
+        <details id="specific-details">
             <summary> Specific Purpose Software </summary>
             <table>
                 <tr>
@@ -113,65 +127,58 @@
             </table>
         </details>
 
+    </div>
+
+    <div id="system-details">
         <article>
-            <h2>System Software</h2>
-                <p> 
-                    Manages and supports the operation of a computer system, often interacting directly with hardware.
-                    It includes operating systems, hardware drivers, and programming languages, which are typically not of
-                    concern to regular end-users. 
-                </p>
-        </article>
-    </section>
-
-
-    <article>
-        <p>
-            manages and supports the operation of a computer system, often interacting directly with hardware. 
-            Includes operating systems, hardware drivers, and programming languages, which are typically not of concern to regular end-users.
-        </p>
-            <table>
-                <tr>
-                    <th>System Management Software</th>
-                    <th>System Development Software </th>
-                </tr>
-                <tr>
-                    <td>manages and supports computer hardware, networking, and data resources, including operating systems, DBMS, and system utilities. It extends across various devices and enterprise-wide IT systems, handling tasks like application lifecycle management, network performance, disaster recovery, and automation.</td>
-                    <td>involves defining, designing, testing, and implementing new software applications, including custom systems, database creation, or third-party software acquisition. Systems developers use tools and programs to create, debug, maintain, and support these applications.
-                        <details>
-                            <summary> Programming Languages </summary>
-                            <table>
-                                <tr>
-                                    <th>Types of Programming Languages</th>
-                                    <th>Description</th>
-                                </tr>
-                                <tr>
-                                    <th>Procedural Programming Language</th>
-                                    <td>execute a sequence of statements using variables, loops, and other elements, often controlling variables and performing tasks like printing information, unlike functional programming languages.</td>
-                                </tr>
-                                <tr>
-                                    <th>Functional Programming Language</th>
-                                    <td>focus on return values and avoid loops, using recursive functions instead, while discouraging side effects and state storage; they are more abstract but can be harder to understand at the machine level, making them less suited for system programming.</td>
-                                </tr>
-                                <tr>
-                                    <th>Object-oriented Programming Language</th>
-                                    <td>Object-oriented programming languages view the world as objects with internal data and external access, emphasizing encapsulation, inheritance for reusability, and polymorphism to extend implementations without extensive code changes.</td>
-                                </tr>
-                                <tr>
-                                    <th>Scripting Programming Language</th>
-                                    <td>typically procedural with some object-oriented elements, but they are not considered full-fledged programming languages for developing large systems.</td>
-                                </tr>
-                                <tr>
-                                    <th>Logic Programming Language</th>
-                                    <td>Declarative languages allow programmers to make statements about what should be done, leaving the machine to determine how to achieve the result by imposing constraints on what it must consider.</td>
-                                </tr>
-                            </table>
-                        </details>
-                    </td>
-                </tr>
-            </table>
-
+            <p>
+                manages and supports the operation of a computer system, often interacting directly with hardware. 
+                Includes operating systems, hardware drivers, and programming languages, which are typically not of concern to regular end-users.
+            </p>
+                <table>
+                    <tr>
+                        <th>System Management Software</th>
+                        <th>System Development Software </th>
+                    </tr>
+                    <tr>
+                        <td>manages and supports computer hardware, networking, and data resources, including operating systems, DBMS, and system utilities. It extends across various devices and enterprise-wide IT systems, handling tasks like application lifecycle management, network performance, disaster recovery, and automation.</td>
+                        <td>involves defining, designing, testing, and implementing new software applications, including custom systems, database creation, or third-party software acquisition. Systems developers use tools and programs to create, debug, maintain, and support these applications.
+                            <details>
+                                <summary> Programming Languages </summary>
+                                <table>
+                                    <tr>
+                                        <th>Types of Programming Languages</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Procedural Programming Language</th>
+                                        <td>execute a sequence of statements using variables, loops, and other elements, often controlling variables and performing tasks like printing information, unlike functional programming languages.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Functional Programming Language</th>
+                                        <td>focus on return values and avoid loops, using recursive functions instead, while discouraging side effects and state storage; they are more abstract but can be harder to understand at the machine level, making them less suited for system programming.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Object-oriented Programming Language</th>
+                                        <td>Object-oriented programming languages view the world as objects with internal data and external access, emphasizing encapsulation, inheritance for reusability, and polymorphism to extend implementations without extensive code changes.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Scripting Programming Language</th>
+                                        <td>typically procedural with some object-oriented elements, but they are not considered full-fledged programming languages for developing large systems.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Logic Programming Language</th>
+                                        <td>Declarative languages allow programmers to make statements about what should be done, leaving the machine to determine how to achieve the result by imposing constraints on what it must consider.</td>
+                                    </tr>
+                                </table>
+                            </details>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+    </div>
         
-    </article>
+   
 
     <section>
         <h2>Implementation in Communities</h2>
@@ -220,9 +227,33 @@
 
     </section>
 
+    <div class="to-top" onclick="toTop()">
+        &#10095;
+    </div>
 
     <a href="hardware.html" class="travel">Hardware</a>
     <a href="comptypes.html" class="travel">Computer Types</a>
+    
+    <script>
+        const applicationClick = document.getElementById("application-click")
+        const systemClick = document.getElementById("system-click")
+        const applicationDetails = document.getElementById("application-details")
+        const systemDetails = document.getElementById("system-details")
+
+        applicationClick.addEventListener('click', function(){
+            console.log('application')
+            systemDetails.style.display = "none"
+            applicationDetails.style.display = "block"
+        })
+
+        systemClick.addEventListener('click', function(){
+            console.log('system')
+            applicationDetails.style.display = "none"
+            systemDetails.style.display = "block"
+        })
+
+    </script>
+
     
 </body>
 

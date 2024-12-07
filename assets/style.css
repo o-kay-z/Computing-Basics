@@ -32,12 +32,16 @@ header nav a:hover {
 }
 
 section.first{
-    padding: 80px;
+    padding: 0px;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50;
 }
 
 section.first h2{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 50;
 }
 
 section.second p {
@@ -77,14 +81,15 @@ h3{
 
 section.carousel-container{
  position: relative;
- margin: auto;
+ margin-top: 0px;
+ padding: 0px;
 }
 
 .carousel{
     display: none;
     position: relative;
     text-align: center;
-    padding: 20px;
+    padding: 20px;  
 }
 
 .carousel:first-of-type{
@@ -94,6 +99,7 @@ section.carousel-container{
 .carousel img{
     display: block;
     width: 70%;
+    background-size: contain;
 }
 
 .carousel h3{
@@ -129,14 +135,16 @@ a.prev, .next{
 }
 
 #icons{
-    width: 100px;
+    width: 200px ;
+    height: auto;
+
 }
 
 .data img{
-    max-width: 100%;
+    /* max-width: 100%; */
     display: block;
-    float: left;
-    height: auto;   
+    /* float: left; */
+    /* height: auto;    */
 }
 
 .data p{
@@ -144,6 +152,89 @@ a.prev, .next{
     width: auto;
     padding-left: 550px;
 }
+
+.datainfo{
+    display: flex;
+    gap: 20px;
+}
+
+.numbsys{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.numbsys article{
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    padding: 15px;
+    text-align: center;
+    background-color: #dadada;
+}
+
+.numbsys h3{
+}
+
+.numbsys p{
+    text-align: justify; 
+    font-size: 14px;
+}
+
+#application-details{
+    display: none;
+}
+
+#system-details{
+    display: none;
+}
+
+.to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: green;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    transform: rotate(270deg);
+}
+
+/* .numbsys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.numbsys article {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    background-color: #f3f3f3;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.numbsys h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.numbsys p {
+    font-size: 14px;
+    text-align: justify;
+} */
+
+
 
 
 
